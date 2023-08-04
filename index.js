@@ -23,6 +23,7 @@ client.on(Events.MessageCreate, async msg => {
 				await member.send(`MESSAGE HERE`);
 				console.log(`Successful.`);
 				i++;
+				await new Promise(r => setTimeout(r, 3000));
 			}
 			catch (err) {
 				console.log(`Failed. ${err}`)
